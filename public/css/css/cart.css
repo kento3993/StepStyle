@@ -1,0 +1,96 @@
+.cart-container {
+    min-width: 600px;
+    min-height: 599px;
+    margin: 0 auto;
+    padding: 50px 100px 50px 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 252, 210);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #666;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.btn-delete {
+    background-color: rgb(255, 235, 9);
+}
+
+.credit {
+    background-color: rgb(255, 235, 9);
+    margin:15px;
+    padding:15px;
+}
+
+.credit:hover {
+    background-color: aquamarine;
+}
+
+/* フレキシブルボックスレイアウトを使用して、ページ全体の高さをビューポートの高さに一致させる */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* コンテンツラップはフレキシブルボックスの成長要因を持つので、余分なスペースを占める */
+.content-wrap {
+    flex: 1;
+}
+
+/* フッターはページの最下部に固定されます */
+footer {
+    background-color: #333; /* 背景色を追加してビジュアルに区別する */
+    color: white; /* テキストの色 */
+    padding: 20px 0; /* 上下のパディングを追加 */
+    text-align: center;
+}
+
+.RemoveButton {
+    width:20px;
+}

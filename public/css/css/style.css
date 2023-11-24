@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+
+}
+
+
+
+.icon {
+    height: 50px;
+    width: 100px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 5px 10px;
+}
+
+.search-bar button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+
+
+.top-notice {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center; 
+    line-height: 50px;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px 680px rgb(255 255 255/ 20%);
+}
+
+.top-notice a {
+    color: white;
+    text-decoration: underline white 1px;
+}
+
+
+/*jumpボタン*/
+
+.jump {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    padding: 0 10px;
+    transition: all .3s ease;
+}
+
+.hidden {
+    height: 0;
+    padding: 0 10px;
+    opacity: 0;
+}
+
+
+
+
+/*sign_in.php*/
+
+open-modal {
+    display: none;
+}
+
+#overlay {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign_in_box {
+    z-index: 999;
+    margin-top: 50vh;
+    opacity: 0;
+    width: 40%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+#sign_in_box h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+.flexBox {
+    margin: 0 auto;
+}
+
+#sign_in_box dl {
+    padding: 20px;
+}
+
+#sign_in_box dd {
+    padding: 5px 0;
+}
+
+#sign_in_box dd input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+#sign_in_box dd button {
+    color: white;
+    background-color: #d70466;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sign_in {
+    cursor: pointer;
+}
+
+#sign_in_box .sns {
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+#sign_in_box .sns dd button {
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#sign_in_box .sns dd img {
+    width: 1.5rem;
+}
+
+
+
+/* スクロール*/
+
+.motion {
+    background-color: rgba(0, 0, 0, 8);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+
+/* section */
+
+section {
+    padding: 0 5%;
+}
+
+section p {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+
+
+.access .area {
+    font-weight: bold;
+}
+
+
+/*main*/
+
+main {
+    margin: 0 0 120px 0;
+}
+
+.bg_white {
+    background-color: white;
+    color: black;
+}
+
+.bg_black {
+    background-color: black;
+    color: white;
+    padding: 40px 5%;
+}
+
+
+/*main seciton1*/
+
+section h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* グリット調整 */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: rgba(241, 201, 21, 0.2);
+}
+
+form {
+    width: 100%; /* formの幅を100%に設定 */
+    border: none; /* 枠線を削除 */
+    padding: 0; /* 内側の余白を削除 */
+    margin: 0; /* 外側の余白を削除 */
+}
+
+.box {
+    width: 100%; /* boxの幅を100%に設定 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto; /* 高さを自動調整 */
+    display: flex; /* flexboxを使用 */
+    flex-direction: column; /* 縦方向に並べる */
+}
+
+.photo img {
+    width: 100%;
+    height: auto; /* 画像の高さを自動調整 */
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #ccc; /* 画像の下にボーダーを追加 */
+    margin-bottom: 10px; /* 画像と説明文の間隔 */
+}
+
+.info {
+    flex-grow: 1; /* 残りのスペースをinfoで埋める */
+}
+
+.box {
+    width: 500px;  /* 3列レイアウトの基本設定 */
+    border: 1px solid #e0e0e0;  /* 枠線 */
+    padding: 10px;  /* 内側のスペース */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* 影 */
+    transition: transform 0.3s;  /* アニメーション効果 */
+}
+
+/* サブミットボタンのスタイル調整 */
+button {
+    display: block;
+    margin: 20px auto; /* 中央揃え */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+
+/*レスポンシブ*/
+
+@media (max-width: 896px) {
+
+
+
+    header nav .g_nav {
+        display: none;
+    }
+
+    .sign .sign_in {
+        display: none;
+    }
+
+    header nav .sp {
+        display: block;
+        z-index: 999;
+    }
+
+    header nav .sp img {
+        width: 50px;
+    }
+
+    header nav .sp img:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+}
+
+@media(max-width: 700px) {
+    header h1.concept {
+        font-size: 48px;
+    }
+
+    footer .nav_area {
+        display: block;
+    }
+
+    footer .inner h2 {
+        border-bottom: 1px solid #ccc;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    header h1.concept {
+        font-size: 32px;
+    }
+
+
+}

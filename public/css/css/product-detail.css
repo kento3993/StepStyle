@@ -1,0 +1,122 @@
+/* リセットCSS (一部のブラウザデフォルトのスタイルをリセット) */
+body, h1, h2, p, span, div, header, footer, button, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 全体的な設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px; /* 任意の最大幅を設定 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1; /* 商品画像と商品情報の領域を等しくする */
+    max-width: 50%; /* 画像領域の最大幅 */
+    padding-right: 20px; /* 画像と商品情報の間にスペースを追加 */
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 10px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px; /* ボタン間のスペース */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #2980b9;
+}
+
+.review2{
+    background-color: #7bcaff;
+}
+
+.review2:hover{
+    background-color: #c7e9ff;
+}
+
+
+.add-to-cart {
+    background-color: #3498db; /* 青色 */
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9; /* 濃い青色 */
+}
+
+.add-to-favorites {
+    background-color: #e74c3c; /* 赤色 */
+    color: #fff;
+}
+
+.add-to-favorites:hover {
+    background-color: #c0392b; /* 濃い赤色 */
+}
+
+/* レビューセクションのスタイル */
+.reviews-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px; /* 任意の最大幅を設定 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin-bottom: 5px;
+}
+
+.review span {
+    font-size: 0.9em;
+    color: #888;
+}
+

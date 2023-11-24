@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    min-width: 800px; /* 幅を調整 */
+    padding: 20px;
+    flex-grow: 1;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 30px 20px; /* 上下のパディングを増やす */
+    border-bottom: 1px solid #ddd; 
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f5f6fa; /* 偶数行に背景色を設定 */
+}
+
+tbody tr:hover {
+    background-color: #eaeef2; /* ホバー時の背景色を変更 */
+}
+
+th {
+    background-color: #2ed573;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f6fa;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn.edit {
+    background-color: #4cd137;
+}
+
+.btn.delete {
+    background-color: #e84118;
+}
+
+.btn.add {
+    display: block;
+    margin: 20px auto;
+    background-color: #00a8ff;
+}

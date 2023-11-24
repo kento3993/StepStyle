@@ -1,0 +1,142 @@
+header.contact {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: none;
+}
+
+.contact_box {
+    width: 70%; 
+    margin: 5% auto;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    background-color: #f3eff0;
+}
+
+.contact_box h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact_box #form,
+.contact_box .confirm_box {
+    margin: 3%;
+}
+
+.contact_box h3 {
+    background: linear-gradient(to bottom right, #f5f5f5, #eaeaea);
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 1%;
+    margin: 1% 0;
+}
+
+.contact_box p {
+    font-weight: normal;
+}
+
+.contact_box .required {
+    color: red;
+}
+
+.contact_box dl {
+    margin: 2% 0;
+}
+
+.contact_box dd {
+    padding: 0.5% 0 1%;
+    font-size: 1.2rem;
+}
+
+.contact_box .error {
+    font-size: 14px;
+    color: red;
+}
+
+.contact_box input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.contact_box textarea {
+    resize: none;
+    width: 100%;
+    height: 33vh;
+    font-size: 1.2rem;
+    padding: 10px 2.5px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+.contact_box button,
+.confirm_btn .send {
+    color: white;
+    background-color: #d70466;
+    width: 100%;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.send {
+    padding: 10px 2.5px;
+}
+
+#center {
+    text-align: center;
+}
+
+.contact_box .confirm input {
+    padding: 1%;
+}
+
+.contact_box .confirm dt {
+    margin-top: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact_box .confirm dd.confirm_btn {
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_box .confirm dd.confirm_btn a {
+    width: 100%;
+    padding: 10px 2.5px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #066;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: #066;
+}
+
+.complete_message {
+    padding: 3%;
+}
+
+.complete_message a {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 1%;
+    text-decoration: underline;
+    color: blue;
+}
+
+textarea {
+    word-wrap: break-word;
+}
+
+.confirm dd {
+    word-wrap: break-word;
+}
+
